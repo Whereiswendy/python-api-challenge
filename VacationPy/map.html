@@ -1,0 +1,4117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Humidity Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="https://maps.geoapify.com/v1/api.js"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 100vh;"></div>
+    <script>
+        var apiKey = 'c89e0d1e6285437c959cec653ddf659b';
+        var map = new Geoapify.MapView('map', apiKey, {
+            center: { lat: 19.825993162393164, lon: 15.849739999999999 },
+            zoom: 2,
+            style: 'osm-bright'
+        });
+
+        
+    var marker = L.circleMarker([-3.7227, -38.5247], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fortaleza, BR<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([-18.65, -173.9833], {
+        color: 'blue',
+        radius: 27.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("neiafu, TO<br>Humidity: 54%");
+    
+    var marker = L.circleMarker([-46.4, 168.35], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("invercargill, NZ<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([78.2186, 15.6401], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("longyearbyen, SJ<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([54.868, -1.6985], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("stanley, GB<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([68.0546, 166.4372], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bilibino, RU<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([-28.3167, 153.4], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("murwillumbah, AU<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([29.2639, 0.231], {
+        color: 'blue',
+        radius: 7.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("timimoun, DZ<br>Humidity: 15%");
+    
+    var marker = L.circleMarker([10.2167, 103.9667], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("duong dong, VN<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([19.1194, -98.1708], {
+        color: 'blue',
+        radius: 6.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vicente guerrero, MX<br>Humidity: 12%");
+    
+    var marker = L.circleMarker([7.7797, 98.3253], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("rawai, TH<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([61.0064, 36.4481], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vytegra, RU<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([15.1355, 145.701], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saipan, MP<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([-25.066, -130.1015], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("adamstown, PN<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([50.7587, 59.5386], {
+        color: 'blue',
+        radius: 24.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dombarovskiy, RU<br>Humidity: 48%");
+    
+    var marker = L.circleMarker([-6.9932, 110.4203], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("semarang, ID<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([-13.75, -65.4333], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("santa ana de yacuma, BO<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([62.456, -114.3525], {
+        color: 'blue',
+        radius: 29.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yellowknife, CA<br>Humidity: 59%");
+    
+    var marker = L.circleMarker([-38.2667, 141.9667], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("codrington, AU<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([28.3492, 28.8659], {
+        color: 'blue',
+        radius: 28.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al bawiti, EG<br>Humidity: 57%");
+    
+    var marker = L.circleMarker([-33.036, -59.0013], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("larroque, AR<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([-0.9, -89.6], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto baquerizo moreno, EC<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([-33.95, 115.0667], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("margaret river, AU<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([22.0752, -159.319], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kapa'a, US<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([14.8667, -24.7167], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nova sintra, CV<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([4.375, -7.7169], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("harper, LR<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([-1.0783, 35.8601], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("narok, KE<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([14.3, -91.9167], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("champerico, GT<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([3.3803, -59.7968], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lethem, GY<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([49.7529, 13.0041], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("stribro, CZ<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([47.5166, -52.7813], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mount pearl, CA<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-54.2811, -36.5092], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("grytviken, GS<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([-49.35, 70.2167], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port-aux-francais, TF<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([41.7057, -70.2286], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yarmouth, US<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-30.7414, 30.455], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port shepstone, ZA<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([38.7333, -27.0667], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("praia da vitoria, PT<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([-43.9535, -176.5597], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("waitangi, NZ<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([42.6001, -73.9662], {
+        color: 'blue',
+        radius: 30.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("albany, US<br>Humidity: 61%");
+    
+    var marker = L.circleMarker([64.75, 177.4833], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("anadyr, RU<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([-43.0167, 147.3167], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("blackmans bay, AU<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([64.8, -147.5333], {
+        color: 'blue',
+        radius: 11.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("badger, US<br>Humidity: 22%");
+    
+    var marker = L.circleMarker([-37.0676, -12.3116], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("edinburgh of the seven seas, SH<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([62.7833, 148.1667], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("susuman, RU<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([-12.1568, 96.8225], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("west island, CC<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([28.3669, 121.36], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wenling, CN<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([18.6203, -69.4958], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("los llanos, DO<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([-38.8759, -62.0736], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("punta alta, AR<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([-46.5619, 169.4708], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("papatowai, NZ<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([-19.6833, 63.4167], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port mathurin, MU<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([39.1834, -84.5333], {
+        color: 'blue',
+        radius: 21.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hamilton, US<br>Humidity: 43%");
+    
+    var marker = L.circleMarker([7.8767, -11.1875], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kenema, SL<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([37.197, 50.1535], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("langarud, IR<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-33.918, 25.5701], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port elizabeth, ZA<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([38.1811, 20.489], {
+        color: 'blue',
+        radius: 20.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("argostolion, GR<br>Humidity: 40%");
+    
+    var marker = L.circleMarker([35.7333, 140.8333], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hasaki, JP<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([-22.6833, 14.5333], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("swakopmund, nan<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([66.8014, 65.8081], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kharp, RU<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([6.906, 134.13], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("angaur state, PW<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([39.2776, -74.5746], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ocean city, US<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([7.4178, 6.7371], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("alo, NG<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([21.1167, 70.1167], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mangrol, IN<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([28.9167, 30.85], {
+        color: 'blue',
+        radius: 29.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sumusta as sultani, EG<br>Humidity: 58%");
+    
+    var marker = L.circleMarker([-38.0023, -57.5575], {
+        color: 'blue',
+        radius: 32.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mar del plata, AR<br>Humidity: 65%");
+    
+    var marker = L.circleMarker([17.7704, 102.1895], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nam som, TH<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([-54.8, -68.3], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ushuaia, AR<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([60.7167, -46.0333], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("qaqortoq, GL<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([36.6833, 71.5333], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ashkasham, AF<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([-12.2787, 49.2917], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("antsiranana, MG<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([31.3974, -102.3501], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("crane, US<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([-25.0319, 46.9987], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tolanaro, MG<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([69.2167, -51.1], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ilulissat, GL<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([-22.2008, -46.6158], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("albertina, BR<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([-17.75, -149.55], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("papao, PF<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([66.4167, 112.4], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("udachny, RU<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([9.2333, 29.8333], {
+        color: 'blue',
+        radius: 17.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bentiu, SS<br>Humidity: 35%");
+    
+    var marker = L.circleMarker([-31.6229, 29.5448], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port saint john's, ZA<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([-4.5772, -81.2719], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("talara, PE<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([66.0755, -23.124], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("isafjordur, IS<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([44.6724, -63.4751], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cole harbour, CA<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([-19.0595, -169.9187], {
+        color: 'blue',
+        radius: 23.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("alofi, NU<br>Humidity: 47%");
+    
+    var marker = L.circleMarker([69.4058, 86.1778], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dudinka, RU<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([7.7667, -80.2833], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("las tablas, PA<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([-21.2078, -159.775], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("avarua, CK<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([-5.9156, -35.2628], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("parnamirim, BR<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([52.0486, 106.6528], {
+        color: 'blue',
+        radius: 21.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kabansk, RU<br>Humidity: 42%");
+    
+    var marker = L.circleMarker([-53.15, -70.9167], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("punta arenas, CL<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([11.2408, -74.199], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("santa marta, CO<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([-15.7667, 128.7333], {
+        color: 'blue',
+        radius: 26.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kununurra, AU<br>Humidity: 53%");
+    
+    var marker = L.circleMarker([12.1, 75.2], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("payyannur, IN<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([-22.2833, 44.5167], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ankazoabo, MG<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([-34.4833, -54.3333], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("rocha, UY<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([-5.5569, -80.8222], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sechura, PE<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([12.2167, 99.75], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("prachuap khiri khan, TH<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([-9.3852, -171.2468], {
+        color: 'blue',
+        radius: 34.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fale old settlement, TK<br>Humidity: 68%");
+    
+    var marker = L.circleMarker([-7.4706, -34.8086], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pitimbu, BR<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([-29.9533, -71.3436], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("coquimbo, CL<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-34.5322, 20.0403], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bredasdorp, ZA<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-1.4014, 5.6325], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("san antonio de pale, GQ<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([14.2495, 13.1092], {
+        color: 'blue',
+        radius: 13.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nguigmi, NE<br>Humidity: 27%");
+    
+    var marker = L.circleMarker([12.5458, 125.1147], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("palapag, PH<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([65.5842, 22.1547], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lulea, SE<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([-22.0744, -48.7403], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bariri, BR<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([21.9789, -159.3672], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lihue, US<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([40.4403, -99.3698], {
+        color: 'blue',
+        radius: 17.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("holdrege, US<br>Humidity: 34%");
+    
+    var marker = L.circleMarker([53.3168, -60.3315], {
+        color: 'blue',
+        radius: 23.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("happy valley-goose bay, CA<br>Humidity: 46%");
+    
+    var marker = L.circleMarker([35.2058, 71.8756], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("upper dir, PK<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([22.0669, -159.378], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wailua homesteads, US<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([-23.3428, -57.0597], {
+        color: 'blue',
+        radius: 20.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("horqueta, PY<br>Humidity: 41%");
+    
+    var marker = L.circleMarker([-0.0583, -51.1817], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("santana, BR<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([39.7432, 98.5174], {
+        color: 'blue',
+        radius: 8.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("jiuquan, CN<br>Humidity: 16%");
+    
+    var marker = L.circleMarker([-51.7236, -72.4875], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto natales, CL<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([19.5933, -154.9731], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hawaiian paradise park, US<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([38.9342, 100.4517], {
+        color: 'blue',
+        radius: 9.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zhangye, CN<br>Humidity: 18%");
+    
+    var marker = L.circleMarker([35.9606, -83.9207], {
+        color: 'blue',
+        radius: 26.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("knoxville, US<br>Humidity: 52%");
+    
+    var marker = L.circleMarker([-17.4759, 24.2968], {
+        color: 'blue',
+        radius: 25.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sesheke, ZM<br>Humidity: 51%");
+    
+    var marker = L.circleMarker([38.5167, -28.7], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ribeira grande, PT<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([67.6803, 53.1512], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("iskateley, RU<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([41.2372, 13.0942], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("san felice circeo, IT<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([49.695, 22.0193], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("brzozow, PL<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([40.5982, -124.1573], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fortuna, US<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([35.1333, 140.3], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("katsuura, JP<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([38.9433, -95.0986], {
+        color: 'blue',
+        radius: 18.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("eudora, US<br>Humidity: 37%");
+    
+    var marker = L.circleMarker([-9.9333, 33.9333], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("karonga, MW<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([29.5267, 35.0078], {
+        color: 'blue',
+        radius: 19.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aqaba, JO<br>Humidity: 38%");
+    
+    var marker = L.circleMarker([28.2211, 61.2158], {
+        color: 'blue',
+        radius: 15.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("khash, IR<br>Humidity: 30%");
+    
+    var marker = L.circleMarker([-28.2667, 153.5667], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kingscliff, AU<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([-16.8065, 26.9531], {
+        color: 'blue',
+        radius: 23.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("choma, ZM<br>Humidity: 46%");
+    
+    var marker = L.circleMarker([-18.3333, -59.75], {
+        color: 'blue',
+        radius: 22.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("robore, BO<br>Humidity: 45%");
+    
+    var marker = L.circleMarker([26.3369, 127.8719], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("katsuren-haebaru, JP<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([70.9221, -8.7187], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("olonkinbyen, SJ<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([53.3161, 40.7081], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("staroyur'yevo, RU<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([37.15, 122.3833], {
+        color: 'blue',
+        radius: 24.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yatou, CN<br>Humidity: 48%");
+    
+    var marker = L.circleMarker([28.4391, 48.4913], {
+        color: 'blue',
+        radius: 15.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al khafji, SA<br>Humidity: 31%");
+    
+    var marker = L.circleMarker([11.2278, 169.8474], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("utrik, MH<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-18.1416, 178.4415], {
+        color: 'blue',
+        radius: 27.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("suva, FJ<br>Humidity: 54%");
+    
+    var marker = L.circleMarker([63.7506, -68.5145], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("iqaluit, CA<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([5.0214, 120.1328], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tongouson, PH<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([-37.6167, -73.65], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lebu, CL<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([-0.6, 73.0833], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hithadhoo, MV<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([41.3783, 60.3639], {
+        color: 'blue',
+        radius: 15.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("xiva, UZ<br>Humidity: 31%");
+    
+    var marker = L.circleMarker([19.6406, -155.9956], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kailua-kona, US<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([41.3712, -73.414], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bethel, US<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([-28.55, 16.4333], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("oranjemund, nan<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([63.1792, 14.6357], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ostersund, SE<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([37.5949, -120.9577], {
+        color: 'blue',
+        radius: 12.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ceres, US<br>Humidity: 25%");
+    
+    var marker = L.circleMarker([-17.75, -149.2833], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("afaahiti, PF<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([17.997, -76.7936], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kingston, JM<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([60.7161, -135.0538], {
+        color: 'blue',
+        radius: 10.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("whitehorse, CA<br>Humidity: 21%");
+    
+    var marker = L.circleMarker([11.2833, -15.8333], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bubaque, GW<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([24.85, 51.3333], {
+        color: 'blue',
+        radius: 19.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al wakrah, QA<br>Humidity: 39%");
+    
+    var marker = L.circleMarker([39.4409, -78.9739], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("keyser, US<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([44.1833, 28.65], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("constantia, RO<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([-7.25, 35.0667], {
+        color: 'blue',
+        radius: 34.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mafinga, TZ<br>Humidity: 68%");
+    
+    var marker = L.circleMarker([8.0823, 134.7173], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kayangel, PW<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-33.0393, -71.6273], {
+        color: 'blue',
+        radius: 29.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("valparaiso, CL<br>Humidity: 58%");
+    
+    var marker = L.circleMarker([17.9583, -102.2], {
+        color: 'blue',
+        radius: 29.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lazaro cardenas, MX<br>Humidity: 59%");
+    
+    var marker = L.circleMarker([-0.9516, 122.7875], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("luwuk, ID<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([67.5, 64.0], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vorkuta, RU<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([-15.1961, 12.1522], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("namibe, AO<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([5.4112, 100.3354], {
+        color: 'blue',
+        radius: 50.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("georgetown, MY<br>Humidity: 100%");
+    
+    var marker = L.circleMarker([44.4256, 39.5319], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("khadyzhensk, RU<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([-23.7, 133.8833], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("alice springs, AU<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([-36.7167, -73.1167], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("talcahuano, CL<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([7.4167, 81.8167], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kalmunai, LK<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([9.285, 105.7244], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bac lieu, VN<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([28.629, -17.9293], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tazacorte, ES<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([61.6195, 72.1555], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lyantor, RU<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([62.3432, 5.8487], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ulsteinvik, NO<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([45.9454, -66.6656], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fredericton, CA<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([44.8824, 110.1163], {
+        color: 'blue',
+        radius: 13.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saynshand, MN<br>Humidity: 26%");
+    
+    var marker = L.circleMarker([34.6667, 138.95], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("shimoda, JP<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([67.5833, 63.95], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vorgashor, RU<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([45.0833, 3.0], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saint-flour, FR<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([44.2445, -86.3242], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("manistee, US<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([35.2383, 58.4656], {
+        color: 'blue',
+        radius: 25.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kashmar, IR<br>Humidity: 51%");
+    
+    var marker = L.circleMarker([68.7098, -52.8699], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aasiaat, GL<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([29.9737, 32.5263], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("suez, EG<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([71.6872, 128.8694], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tiksi, RU<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([45.5549, -0.8967], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la passe, FR<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([42.097, -79.2353], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("jamestown, US<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([47.7833, 67.7667], {
+        color: 'blue',
+        radius: 24.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zhezqazghan, KZ<br>Humidity: 48%");
+    
+    var marker = L.circleMarker([22.8909, -109.9124], {
+        color: 'blue',
+        radius: 10.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cabo san lucas, MX<br>Humidity: 21%");
+    
+    var marker = L.circleMarker([-33.5906, 26.891], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port alfred, ZA<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([55.7435, -97.8558], {
+        color: 'blue',
+        radius: 27.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("thompson, CA<br>Humidity: 54%");
+    
+    var marker = L.circleMarker([28.1667, 94.7667], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("along, IN<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-41.1333, 173.0167], {
+        color: 'blue',
+        radius: 29.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("motueka, NZ<br>Humidity: 58%");
+    
+    var marker = L.circleMarker([-15.8631, -38.8828], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("belmonte, BR<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([50.0163, -125.2446], {
+        color: 'blue',
+        radius: 17.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("campbell river, CA<br>Humidity: 35%");
+    
+    var marker = L.circleMarker([36.757, -90.3929], {
+        color: 'blue',
+        radius: 19.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("poplar bluff, US<br>Humidity: 38%");
+    
+    var marker = L.circleMarker([69.1989, 33.4478], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("polyarnyy, RU<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([47.5649, -52.7093], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("st. john's, CA<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([70.0744, 29.7487], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vadso, NO<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([-31.9333, 115.8333], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("perth, AU<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([28.017, -97.5169], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("san patricio, US<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([-33.0153, 27.9116], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("east london, ZA<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-35.2268, 173.9474], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kerikeri, NZ<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([48.9667, -57.9484], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("corner brook, CA<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([48.3667, 10.8833], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("augusta, DE<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([64.5667, 143.2], {
+        color: 'blue',
+        radius: 29.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ust-nera, RU<br>Humidity: 58%");
+    
+    var marker = L.circleMarker([52.9463, -66.9114], {
+        color: 'blue',
+        radius: 20.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("labrador city, CA<br>Humidity: 40%");
+    
+    var marker = L.circleMarker([-34.4187, 19.2345], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hermanus, ZA<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([62.3833, 26.4333], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hankasalmi, FI<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([51.6307, 35.2775], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("l'govskiy, RU<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([34.2542, -110.0298], {
+        color: 'blue',
+        radius: 14.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("show low, US<br>Humidity: 29%");
+    
+    var marker = L.circleMarker([17.2706, -100.8939], {
+        color: 'blue',
+        radius: 25.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("san luis de la loma, MX<br>Humidity: 51%");
+    
+    var marker = L.circleMarker([57.0531, -135.33], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sitka, US<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([-0.95, -78.6833], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pujili, EC<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([5.5549, 120.9136], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("laminusa, PH<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([52.9306, 158.4028], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vilyuchinsk, RU<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([29.1081, 21.2869], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("awjilah, LY<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([-19.8, -174.35], {
+        color: 'blue',
+        radius: 28.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pangai, TO<br>Humidity: 57%");
+    
+    var marker = L.circleMarker([47.6167, 21.35], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("balmazujvaros, HU<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([31.3085, -86.4833], {
+        color: 'blue',
+        radius: 29.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("andalusia, US<br>Humidity: 58%");
+    
+    var marker = L.circleMarker([-8.2833, 113.3667], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kencong, ID<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([61.0701, 42.0983], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vel'sk, RU<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([-12.5498, 28.2407], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mufulira, ZM<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([50.9333, 6.95], {
+        color: 'blue',
+        radius: 34.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("colonia, DE<br>Humidity: 68%");
+    
+    var marker = L.circleMarker([30.1633, -85.7408], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("upper grand lagoon, US<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([40.6804, -122.3708], {
+        color: 'blue',
+        radius: 12.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("shasta lake, US<br>Humidity: 24%");
+    
+    var marker = L.circleMarker([-6.1219, 141.2906], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kiunga, PG<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([43.4447, 16.6886], {
+        color: 'blue',
+        radius: 32.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("omis, HR<br>Humidity: 65%");
+    
+    var marker = L.circleMarker([-12.497, 131.047], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("howard springs, AU<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([48.4833, 26.5], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("khotyn, UA<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([-2.0226, 147.2712], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lorengau, PG<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([17.8815, -76.4093], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("morant bay, JM<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([63.9381, 65.0419], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("berezovo, RU<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([4.9167, -52.2667], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("remire-montjoly, GF<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-34.7333, 135.8667], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("port lincoln, AU<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([61.4284, 21.871], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ulvila, FI<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([49.9168, -74.3659], {
+        color: 'blue',
+        radius: 23.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chibougamau, CA<br>Humidity: 47%");
+    
+    var marker = L.circleMarker([60.3725, 93.0408], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("severo-yeniseyskiy, RU<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([49.4169, -82.4331], {
+        color: 'blue',
+        radius: 25.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kapuskasing, CA<br>Humidity: 51%");
+    
+    var marker = L.circleMarker([16.2079, 52.176], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al ghayzah, YE<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([37.4833, 21.65], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zacharo, GR<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([18.7, -103.6583], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("coahuayana de hidalgo, MX<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([-20.4872, 57.4656], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chemin grenier, MU<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([34.6391, -120.4579], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lompoc, US<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([6.964, 158.206], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kolonia town, FM<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([2.4803, 96.3801], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sinabang, ID<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([59.2667, 5.1833], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("akrehamn, NO<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([-5.1989, -35.4608], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("touros, BR<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([-14.8333, -64.9], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("trinidad, BO<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([63.9331, -20.9971], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("selfoss, IS<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([22.8167, 108.3167], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nanning, CN<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-28.8667, 153.5833], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("east ballina, AU<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([62.2266, -6.589], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("klaksvik, FO<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([53.6039, 91.3903], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("belyy yar, RU<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([48.0, 122.7167], {
+        color: 'blue',
+        radius: 24.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zhalantun, CN<br>Humidity: 49%");
+    
+    var marker = L.circleMarker([12.871, 11.0482], {
+        color: 'blue',
+        radius: 14.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gashua, NG<br>Humidity: 28%");
+    
+    var marker = L.circleMarker([54.7804, -127.1743], {
+        color: 'blue',
+        radius: 13.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("smithers, CA<br>Humidity: 27%");
+    
+    var marker = L.circleMarker([-13.8833, 167.55], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sola, VU<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([48.8002, -79.1996], {
+        color: 'blue',
+        radius: 32.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la sarre, CA<br>Humidity: 65%");
+    
+    var marker = L.circleMarker([20.7, -105.2], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ixtapa, MX<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([11.5936, 37.3908], {
+        color: 'blue',
+        radius: 27.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bahir dar, ET<br>Humidity: 54%");
+    
+    var marker = L.circleMarker([45.3055, -93.7941], {
+        color: 'blue',
+        radius: 11.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("monticello, US<br>Humidity: 23%");
+    
+    var marker = L.circleMarker([50.7289, -113.9828], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("okotoks, CA<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([-20.2833, 44.2833], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("morondava, MG<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([51.8333, 143.1667], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nogliki, RU<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([-20.7377, 116.8463], {
+        color: 'blue',
+        radius: 16.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("karratha, AU<br>Humidity: 32%");
+    
+    var marker = L.circleMarker([-8.5421, -172.5159], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("atafu village, TK<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([25.5198, 90.2201], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tura, IN<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([35.3667, 137.25], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mizunami, JP<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([-34.9667, -54.95], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("punta del este, UY<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([6.655, 6.3869], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ubiaja, NG<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([24.4686, 39.6142], {
+        color: 'blue',
+        radius: 15.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("medina, SA<br>Humidity: 31%");
+    
+    var marker = L.circleMarker([34.9047, -1.0339], {
+        color: 'blue',
+        radius: 26.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ouled mimoun, DZ<br>Humidity: 52%");
+    
+    var marker = L.circleMarker([35.8912, 3.1585], {
+        color: 'blue',
+        radius: 22.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("'ain boucif, DZ<br>Humidity: 45%");
+    
+    var marker = L.circleMarker([-41.8697, -73.8203], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ancud, CL<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([35.139, -79.006], {
+        color: 'blue',
+        radius: 22.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fort bragg, US<br>Humidity: 45%");
+    
+    var marker = L.circleMarker([49.7833, -92.7503], {
+        color: 'blue',
+        radius: 18.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dryden, CA<br>Humidity: 36%");
+    
+    var marker = L.circleMarker([56.3567, 44.0669], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bor, RU<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([-22.9661, -42.0278], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("arraial do cabo, BR<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([22.5892, 88.3103], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("howrah, IN<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([-10.0681, -78.1522], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("huarmey, PE<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([62.6667, 135.6], {
+        color: 'blue',
+        radius: 18.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("khandyga, RU<br>Humidity: 37%");
+    
+    var marker = L.circleMarker([-26.8908, 28.0971], {
+        color: 'blue',
+        radius: 18.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("deneysville, ZA<br>Humidity: 37%");
+    
+    var marker = L.circleMarker([48.8, 132.95], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("birobidzhan, RU<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([1.7284, 128.0095], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tobelo, ID<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([-2.8856, -40.12], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("acarau, BR<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([67.4667, 78.7], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tazovsky, RU<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([-0.7393, -90.3518], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto ayora, EC<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([23.05, -99.15], {
+        color: 'blue',
+        radius: 13.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gomez farias, MX<br>Humidity: 27%");
+    
+    var marker = L.circleMarker([64.8569, -147.8028], {
+        color: 'blue',
+        radius: 11.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("college, US<br>Humidity: 23%");
+    
+    var marker = L.circleMarker([-6.1761, 143.6513], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mendi, PG<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([20.785, -156.4656], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kihei, US<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([41.1078, 121.1417], {
+        color: 'blue',
+        radius: 18.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("jinzhou, CN<br>Humidity: 36%");
+    
+    var marker = L.circleMarker([65.85, 74.4859], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pangody, RU<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([34.9833, 139.8667], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tateyama, JP<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([-8.6199, 122.2111], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("maumere, ID<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([-31.8976, 26.8753], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("queenstown, ZA<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([8.3122, 167.3766], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lib, MH<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([69.4865, 88.3972], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("talnakh, RU<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([3.7755, 98.6832], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("belawan, ID<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([22.6783, -3.9836], {
+        color: 'blue',
+        radius: 4.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("taoudenni, ML<br>Humidity: 9%");
+    
+    var marker = L.circleMarker([7.5264, -12.505], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bonthe, SL<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([58.1831, 94.7592], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("motygino, RU<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([19.7297, -155.09], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hilo, US<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([11.7, 92.7167], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bamboo flat, IN<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([40.166, -8.8768], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("buarcos, PT<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([53.7884, 81.3423], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kamen'-na-obi, RU<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([20.8833, 94.8167], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chauk, MM<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([-33.7338, 18.9752], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("paarl, ZA<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([-40.9597, 175.6575], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("masterton, NZ<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([-16.7333, -151.4333], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("uturoa, PF<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([25.3628, 49.725], {
+        color: 'blue',
+        radius: 9.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("at taraf, SA<br>Humidity: 19%");
+    
+    var marker = L.circleMarker([34.5667, 76.1], {
+        color: 'blue',
+        radius: 32.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kargil, IN<br>Humidity: 65%");
+    
+    var marker = L.circleMarker([-8.103, 156.8419], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gizo, SB<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([36.2615, -90.9712], {
+        color: 'blue',
+        radius: 16.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pocahontas, US<br>Humidity: 33%");
+    
+    var marker = L.circleMarker([26.2167, 87.0167], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chhatapur, IN<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([40.3973, -91.3849], {
+        color: 'blue',
+        radius: 16.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("keokuk, US<br>Humidity: 33%");
+    
+    var marker = L.circleMarker([6.8833, 73.1], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dhidhdhoo, MV<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([-17.9333, 19.7667], {
+        color: 'blue',
+        radius: 16.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("rundu, nan<br>Humidity: 32%");
+    
+    var marker = L.circleMarker([53.0452, 158.6483], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("petropavlovsk-kamchatsky, RU<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([12.7857, -85.1227], {
+        color: 'blue',
+        radius: 27.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bocana de paiwas, NI<br>Humidity: 55%");
+    
+    var marker = L.circleMarker([-14.2336, -169.5144], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ta`u, AS<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([26.0466, 68.9481], {
+        color: 'blue',
+        radius: 28.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sanghar, PK<br>Humidity: 57%");
+    
+    var marker = L.circleMarker([-37.8, -72.7167], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("angol, CL<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([35.1676, 8.8365], {
+        color: 'blue',
+        radius: 28.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kasserine, TN<br>Humidity: 56%");
+    
+    var marker = L.circleMarker([70.6634, 23.6821], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hammerfest, NO<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([18.4411, 1.4078], {
+        color: 'blue',
+        radius: 4.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kidal, ML<br>Humidity: 8%");
+    
+    var marker = L.circleMarker([-11.7292, -49.0686], {
+        color: 'blue',
+        radius: 22.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gurupi, BR<br>Humidity: 44%");
+    
+    var marker = L.circleMarker([-7.0, 23.45], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mwene-ditu, CD<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([47.4667, 84.8667], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zaysan, KZ<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([47.475, 101.4542], {
+        color: 'blue',
+        radius: 15.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tsetserleg, MN<br>Humidity: 30%");
+    
+    var marker = L.circleMarker([-17.8, 177.4167], {
+        color: 'blue',
+        radius: 22.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nadi, FJ<br>Humidity: 45%");
+    
+    var marker = L.circleMarker([-2.1333, 106.1333], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pangkalpinang, ID<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([33.7456, -117.8678], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("santa ana, US<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([56.5667, 16.6167], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sodra sandby, SE<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([59.3833, 143.3], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("okhotsk, RU<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([6.3005, -10.7969], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("monrovia, LR<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([32.8156, 34.9892], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("haifa, IL<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([44.6514, 37.9428], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kabardinka, RU<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([36.5583, 104.2081], {
+        color: 'blue',
+        radius: 10.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("baiyin, CN<br>Humidity: 21%");
+    
+    var marker = L.circleMarker([-8.8673, 126.3658], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("viqueque, TL<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-28.8667, 153.5667], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ballina, AU<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([11.1635, 166.8941], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("rongelap, MH<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([5.7947, 0.8973], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("anloga, GH<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([10.2753, 170.8646], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mejit, MH<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([62.4723, 6.1549], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("alesund, NO<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([64.5383, -21.9206], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("borgarnes, IS<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([53.8319, 80.3406], {
+        color: 'blue',
+        radius: 26.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pankrushikha, RU<br>Humidity: 52%");
+    
+    var marker = L.circleMarker([42.8698, -72.2818], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("swanzey, US<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([47.8667, 88.1167], {
+        color: 'blue',
+        radius: 27.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("altay, CN<br>Humidity: 54%");
+    
+    var marker = L.circleMarker([62.0025, 132.4325], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("churapcha, RU<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([-2.6833, 111.6167], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pangkalanbuun, ID<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([-28.783, 32.0377], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("richards bay, ZA<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([59.5833, 151.2833], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ola, RU<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([43.1041, -9.2179], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mugia, ES<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([50.8552, 0.5729], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hastings, GB<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([11.65, 7.2333], {
+        color: 'blue',
+        radius: 32.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bardai, NG<br>Humidity: 65%");
+    
+    var marker = L.circleMarker([55.0026, 74.1028], {
+        color: 'blue',
+        radius: 28.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kormilovka, RU<br>Humidity: 56%");
+    
+    var marker = L.circleMarker([30.9667, 61.8833], {
+        color: 'blue',
+        radius: 16.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zaranj, AF<br>Humidity: 32%");
+    
+    var marker = L.circleMarker([58.2481, 22.5039], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kuressaare, EE<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([64.0049, -22.5624], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("keflavik, IS<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([-42.7826, 147.0587], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("new norfolk, AU<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([27.7523, -98.0697], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("alice, US<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([-17.3411, -39.2208], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("prado, BR<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([44.4253, 22.8697], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vanju-mare, RO<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-5.9475, 29.1947], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kalemie, CD<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([1.3673, 173.1241], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bikenibeu village, KI<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([45.7668, -71.9324], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("asbestos, CA<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([50.4111, 80.2275], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("semey, KZ<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([-42.6128, -73.8092], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chonchi, CL<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([-45.8742, 170.5036], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dunedin, NZ<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([49.573, 13.3335], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("prestice, CZ<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([48.0078, 70.7903], {
+        color: 'blue',
+        radius: 23.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("qarazhal, KZ<br>Humidity: 47%");
+    
+    var marker = L.circleMarker([45.8191, -108.4149], {
+        color: 'blue',
+        radius: 10.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lockwood, US<br>Humidity: 20%");
+    
+    var marker = L.circleMarker([1.7471, 40.0573], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wajir, KE<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([-8.7386, 24.9906], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kamina, CD<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([69.2551, 33.3362], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gadzhiyevo, RU<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([8.862, 117.4893], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("conduaga, PH<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([43.9441, -90.8129], {
+        color: 'blue',
+        radius: 15.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sparta, US<br>Humidity: 30%");
+    
+    var marker = L.circleMarker([28.55, 79.3167], {
+        color: 'blue',
+        radius: 23.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("shahi, IN<br>Humidity: 46%");
+    
+    var marker = L.circleMarker([-11.0925, -77.6267], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("caleta de carquin, PE<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([60.7167, 26.4667], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("elimaki, FI<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([-20.2078, 57.7625], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("quatre cocos, MU<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([66.6572, 66.4183], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("labytnangi, RU<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([36.5138, -119.554], {
+        color: 'blue',
+        radius: 13.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kingsburg, US<br>Humidity: 26%");
+    
+    var marker = L.circleMarker([39.4667, 141.95], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yamada, JP<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([8.484, -13.2299], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("freetown, SL<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([38.8333, -2.0], {
+        color: 'blue',
+        radius: 19.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("albacete, ES<br>Humidity: 39%");
+    
+    var marker = L.circleMarker([5.3248, 163.0078], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tofol, FM<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-5.0892, -81.1144], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("paita, PE<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([7.4515, 151.8468], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("weno, FM<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([63.4721, 41.7941], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yemetsk, RU<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([33.5536, 68.4269], {
+        color: 'blue',
+        radius: 19.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ghazni, AF<br>Humidity: 39%");
+    
+    var marker = L.circleMarker([20.8667, -90.4], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("celestun, MX<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([-43.1167, -73.6167], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("quellon, CL<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([62.1091, 42.896], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("shenkursk, RU<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([43.5125, 16.2517], {
+        color: 'blue',
+        radius: 24.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("trogir, HR<br>Humidity: 48%");
+    
+    var marker = L.circleMarker([-21.3393, 55.4781], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saint-pierre, RE<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([18.4167, -64.6167], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("road town, VG<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([52.805, 104.7508], {
+        color: 'blue',
+        radius: 18.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ust'-ordynskiy, RU<br>Humidity: 37%");
+    
+    var marker = L.circleMarker([45.7667, 130.5167], {
+        color: 'blue',
+        radius: 34.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("boli, CN<br>Humidity: 68%");
+    
+    var marker = L.circleMarker([28.4604, 119.9103], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("lishui, CN<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([67.6713, 53.087], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nar'yan-mar, RU<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-12.7967, 45.2794], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pamandzi, YT<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([3.987, -73.758], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("acacias, CO<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-37.8333, 140.7667], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mount gambier, AU<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([63.4106, 48.6872], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("usogorsk, RU<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([12.7, 28.4333], {
+        color: 'blue',
+        radius: 5.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("an nuhud, SD<br>Humidity: 10%");
+    
+    var marker = L.circleMarker([61.0393, 30.1291], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("priozersk, RU<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([10.5669, 72.642], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kavaratti, IN<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-12.1167, -73.0], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pangoa, PE<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([12.65, 54.0333], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hadibu, YE<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([5.7667, 73.3833], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("manadhoo, MV<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([13.2658, 144.6691], {
+        color: 'blue',
+        radius: 40.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("merizo village, GU<br>Humidity: 80%");
+    
+    var marker = L.circleMarker([4.0613, 98.3699], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tanjungtiram, ID<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([37.7058, -121.0849], {
+        color: 'blue',
+        radius: 11.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("salida, US<br>Humidity: 23%");
+    
+    var marker = L.circleMarker([53.5237, -2.4935], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("atherton, GB<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-12.7406, -60.1458], {
+        color: 'blue',
+        radius: 34.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vilhena, BR<br>Humidity: 68%");
+    
+    var marker = L.circleMarker([45.7054, -121.5215], {
+        color: 'blue',
+        radius: 14.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hood river, US<br>Humidity: 29%");
+    
+    var marker = L.circleMarker([50.2619, 71.5514], {
+        color: 'blue',
+        radius: 21.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kievka, KZ<br>Humidity: 43%");
+    
+    var marker = L.circleMarker([38.7992, -9.4469], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("colares, PT<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([-23.8597, 35.3472], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("maxixe, MZ<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([39.11, 26.5547], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mytilene, GR<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([22.7164, -82.2881], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("batabano, CU<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([-34.0033, 24.7314], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kruisfontein, ZA<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([39.9523, -75.1638], {
+        color: 'blue',
+        radius: 30.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("filadelfia, US<br>Humidity: 61%");
+    
+    var marker = L.circleMarker([-9.4047, -35.5072], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("barra de santo antonio, BR<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([8.5667, 16.0833], {
+        color: 'blue',
+        radius: 12.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("moundou, TD<br>Humidity: 25%");
+    
+    var marker = L.circleMarker([-16.7833, 47.65], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tsaratanana, MG<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([16.7833, 94.7333], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pathein, MM<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-17.55, -149.6], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("faaa, PF<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([-20.7333, 139.5], {
+        color: 'blue',
+        radius: 26.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mount isa, AU<br>Humidity: 53%");
+    
+    var marker = L.circleMarker([-14.5428, 40.6728], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nacala, MZ<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([6.9012, 80.0852], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hanwella ihala, LK<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([-6.4667, 16.8167], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kasongo-lunda, CD<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([55.2104, 34.2951], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vyaz'ma, RU<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([37.7167, -25.4333], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vila franca do campo, PT<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([32.65, -17.0667], {
+        color: 'blue',
+        radius: 35.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ribeira brava, PT<br>Humidity: 70%");
+    
+    var marker = L.circleMarker([14.2667, -15.95], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("guinguineo, SN<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([38.4039, -96.1817], {
+        color: 'blue',
+        radius: 17.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("emporia, US<br>Humidity: 34%");
+    
+    var marker = L.circleMarker([10.9333, 108.1], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("phan thiet, VN<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-45.4, -72.7], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto aysen, CL<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([-6.1349, 12.3689], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("soio, AO<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([54.0192, 31.7257], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mstsislaw, BY<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([27.5, 13.2667], {
+        color: 'blue',
+        radius: 16.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("idri, LY<br>Humidity: 32%");
+    
+    var marker = L.circleMarker([-17.5, 24.2667], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("katima mulilo, nan<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([48.25, 4.5833], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("bar-sur-aube, FR<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([62.2743, 21.376], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kristinestad, FI<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([33.2549, -8.506], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("el jadid, MA<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([58.0006, 102.6619], {
+        color: 'blue',
+        radius: 42.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ust'-ilimsk, RU<br>Humidity: 84%");
+    
+    var marker = L.circleMarker([-29.6641, 22.7474], {
+        color: 'blue',
+        radius: 18.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("prieska, ZA<br>Humidity: 36%");
+    
+    var marker = L.circleMarker([19.6228, -155.9522], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("holualoa, US<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([-3.41, -39.0306], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("paracuru, BR<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([36.9034, -104.4391], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("raton, US<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([51.0969, 41.6252], {
+        color: 'blue',
+        radius: 47.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("novokhopersk, RU<br>Humidity: 94%");
+    
+    var marker = L.circleMarker([34.8262, 126.1086], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sinan, KR<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([32.7, -16.7667], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("machico, PT<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([37.0997, 79.9269], {
+        color: 'blue',
+        radius: 5.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hotan, CN<br>Humidity: 11%");
+    
+    var marker = L.circleMarker([-41.0, 145.7167], {
+        color: 'blue',
+        radius: 33.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wynyard, AU<br>Humidity: 67%");
+    
+    var marker = L.circleMarker([52.1783, 32.5818], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("semenivka, UA<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([21.4612, -71.1419], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cockburn town, TC<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([48.55, 51.7833], {
+        color: 'blue',
+        radius: 26.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("inderbor, KZ<br>Humidity: 53%");
+    
+    var marker = L.circleMarker([29.4608, -95.0513], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dickinson, US<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([-20.6667, -40.4975], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("guarapari, BR<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([27.6386, -80.3973], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vero beach, US<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([57.79, -152.4072], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kodiak, US<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([-24.7096, -60.593], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("las lomitas, AR<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([21.6477, -157.9253], {
+        color: 'blue',
+        radius: 35.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la'ie, US<br>Humidity: 71%");
+    
+    var marker = L.circleMarker([59.5667, 150.8], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("magadan, RU<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([46.4154, 3.9054], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saint-francois, FR<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([-16.1564, 33.5867], {
+        color: 'blue',
+        radius: 28.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tete, MZ<br>Humidity: 57%");
+    
+    var marker = L.circleMarker([47.3078, 31.7851], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nova odesa, UA<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([-14.9003, 50.2788], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("antalaha, MG<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([35.55, 133.2333], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sakaiminato, JP<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([34.5334, -82.6499], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("anderson, US<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([48.0667, 114.5], {
+        color: 'blue',
+        radius: 17.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("choibalsan, MN<br>Humidity: 34%");
+    
+    var marker = L.circleMarker([26.2847, 119.7936], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dinghaicun, CN<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([22.9167, -98.0667], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aldama, MX<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([28.8947, 64.4101], {
+        color: 'blue',
+        radius: 8.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("dalbandin, PK<br>Humidity: 17%");
+    
+    var marker = L.circleMarker([37.6713, -3.39], {
+        color: 'blue',
+        radius: 28.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("huelma, ES<br>Humidity: 56%");
+    
+    var marker = L.circleMarker([-3.2033, -52.2064], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("altamira, BR<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([65.9939, 57.5281], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("usinsk, RU<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([28.6392, 47.9306], {
+        color: 'blue',
+        radius: 8.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al wafrah, KW<br>Humidity: 16%");
+    
+    var marker = L.circleMarker([49.2818, 1.7801], {
+        color: 'blue',
+        radius: 45.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gisors, FR<br>Humidity: 90%");
+    
+    var marker = L.circleMarker([-10.1256, -36.1756], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("coruripe, BR<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([32.45, 130.2], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hondomachi-hondo, JP<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([-24.0944, 25.0298], {
+        color: 'blue',
+        radius: 13.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("letlhakeng, BW<br>Humidity: 27%");
+    
+    var marker = L.circleMarker([22.0042, 120.7439], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hengchun, TW<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([44.3114, -96.7984], {
+        color: 'blue',
+        radius: 21.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("brookings, US<br>Humidity: 43%");
+    
+    var marker = L.circleMarker([62.6683, 131.1683], {
+        color: 'blue',
+        radius: 27.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("borogontsy, RU<br>Humidity: 55%");
+    
+    var marker = L.circleMarker([44.0306, 145.8556], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("yuzhno-kurilsk, RU<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([43.4647, -3.8044], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("santander, ES<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([25.0213, 37.2685], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("umluj, SA<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([38.421, -121.4238], {
+        color: 'blue',
+        radius: 10.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("laguna, US<br>Humidity: 21%");
+    
+    var marker = L.circleMarker([6.0815, 171.735], {
+        color: 'blue',
+        radius: 45.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mili, MH<br>Humidity: 91%");
+    
+    var marker = L.circleMarker([-10.4217, 105.6791], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("flying fish cove, CX<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([47.3194, 110.6556], {
+        color: 'blue',
+        radius: 18.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("undurkhaan, MN<br>Humidity: 36%");
+    
+    var marker = L.circleMarker([41.1834, -74.6663], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sussex, US<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([11.3474, 162.3373], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("enewetak, MH<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([31.5, 92.0], {
+        color: 'blue',
+        radius: 13.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nagqu, CN<br>Humidity: 26%");
+    
+    var marker = L.circleMarker([51.7433, 71.7122], {
+        color: 'blue',
+        radius: 26.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("zholymbet, KZ<br>Humidity: 53%");
+    
+    var marker = L.circleMarker([13.4626, 144.6933], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("piti village, GU<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([42.8, 93.45], {
+        color: 'blue',
+        radius: 6.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("hami, CN<br>Humidity: 12%");
+    
+    var marker = L.circleMarker([-0.1934, -74.7819], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto leguizamo, CO<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([-41.606, -65.3557], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sierra grande, AR<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([6.7533, -11.3686], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("robertsport, LR<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([-24.6004, 24.7303], {
+        color: 'blue',
+        radius: 15.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("jwaneng, BW<br>Humidity: 30%");
+    
+    var marker = L.circleMarker([29.358, 30.6814], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ibshaway, EG<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([-8.8368, 13.2343], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("luanda, AO<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([51.9533, 85.3325], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("altayskoye, RU<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([40.0353, 28.4117], {
+        color: 'blue',
+        radius: 46.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("mustafakemalpasa, TR<br>Humidity: 92%");
+    
+    var marker = L.circleMarker([64.1835, -51.7216], {
+        color: 'blue',
+        radius: 43.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("nuuk, GL<br>Humidity: 86%");
+    
+    var marker = L.circleMarker([60.5544, -151.2583], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kenai, US<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([20.6667, -103.3333], {
+        color: 'blue',
+        radius: 5.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("guadalajara, MX<br>Humidity: 10%");
+    
+    var marker = L.circleMarker([68.799, 16.5293], {
+        color: 'blue',
+        radius: 48.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("harstad, NO<br>Humidity: 96%");
+    
+    var marker = L.circleMarker([-23.5776, -65.3509], {
+        color: 'blue',
+        radius: 11.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tilcara, AR<br>Humidity: 23%");
+    
+    var marker = L.circleMarker([-5.6667, 132.75], {
+        color: 'blue',
+        radius: 39.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tual, ID<br>Humidity: 78%");
+    
+    var marker = L.circleMarker([51.064, -0.3272], {
+        color: 'blue',
+        radius: 38.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("horsham, GB<br>Humidity: 76%");
+    
+    var marker = L.circleMarker([66.0833, 76.6333], {
+        color: 'blue',
+        radius: 47.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("novyy urengoy, RU<br>Humidity: 95%");
+    
+    var marker = L.circleMarker([54.4, 9.9833], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gettorf, DE<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([-3.2778, -39.2689], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("trairi, BR<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([7.6947, 126.5503], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kinablangan, PH<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([56.2694, 90.4993], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("achinsk, RU<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([63.8284, 20.2597], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("umea, SE<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([18.5564, -11.4271], {
+        color: 'blue',
+        radius: 7.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tidjikja, MR<br>Humidity: 15%");
+    
+    var marker = L.circleMarker([7.3022, -8.5308], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ganta, LR<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([48.7167, 83.7], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aksuat, KZ<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-21.55, 167.8833], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tadine, NC<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([62.708, 40.2916], {
+        color: 'blue',
+        radius: 49.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("plesetsk, RU<br>Humidity: 99%");
+    
+    var marker = L.circleMarker([56.2501, -117.286], {
+        color: 'blue',
+        radius: 11.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("peace river, CA<br>Humidity: 22%");
+    
+    var marker = L.circleMarker([38.7223, -5.2195], {
+        color: 'blue',
+        radius: 30.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cabeza del buey, ES<br>Humidity: 60%");
+    
+    var marker = L.circleMarker([-10.5775, -75.4017], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("oxapampa, PE<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([13.3886, 144.6585], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("agat village, GU<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([23.2, -106.2333], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("villa union, MX<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([13.3154, 12.6113], {
+        color: 'blue',
+        radius: 8.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("diffa, NE<br>Humidity: 17%");
+    
+    var marker = L.circleMarker([0.3833, 9.7833], {
+        color: 'blue',
+        radius: 48.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ntoum, GA<br>Humidity: 97%");
+    
+    var marker = L.circleMarker([50.2581, -119.2691], {
+        color: 'blue',
+        radius: 20.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vernon, CA<br>Humidity: 41%");
+    
+    var marker = L.circleMarker([60.9794, 76.9242], {
+        color: 'blue',
+        radius: 32.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("izluchinsk, RU<br>Humidity: 64%");
+    
+    var marker = L.circleMarker([22.5667, 59.5289], {
+        color: 'blue',
+        radius: 20.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sur, OM<br>Humidity: 41%");
+    
+    var marker = L.circleMarker([8.5711, 81.2335], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("trincomalee, LK<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([63.7553, 121.6247], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("vilyuysk, RU<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([35.5729, 53.3971], {
+        color: 'blue',
+        radius: 15.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("semnan, IR<br>Humidity: 31%");
+    
+    var marker = L.circleMarker([-5.5502, 150.1429], {
+        color: 'blue',
+        radius: 34.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kimbe, PG<br>Humidity: 69%");
+    
+    var marker = L.circleMarker([42.9333, 89.1667], {
+        color: 'blue',
+        radius: 6.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("turpan, CN<br>Humidity: 13%");
+    
+    var marker = L.circleMarker([-8.145, 159.5921], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("buala, SB<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-1.7656, -55.8661], {
+        color: 'blue',
+        radius: 43.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("oriximina, BR<br>Humidity: 87%");
+    
+    var marker = L.circleMarker([24.0934, 32.907], {
+        color: 'blue',
+        radius: 11.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aswan, EG<br>Humidity: 22%");
+    
+    var marker = L.circleMarker([42.2506, -75.833], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("broome, US<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([39.3558, -9.3811], {
+        color: 'blue',
+        radius: 44.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("peniche, PT<br>Humidity: 88%");
+    
+    var marker = L.circleMarker([-23.865, 35.3833], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("inhambane, MZ<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([30.904, 118.4887], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wenchang, CN<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([14.9167, -23.6167], {
+        color: 'blue',
+        radius: 28.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cidade velha, CV<br>Humidity: 57%");
+    
+    var marker = L.circleMarker([-20.2833, 148.7], {
+        color: 'blue',
+        radius: 36.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("cannonvale, AU<br>Humidity: 72%");
+    
+    var marker = L.circleMarker([1.4726, 103.878], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kampung pasir gudang baru, MY<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([-21.3667, 55.6167], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("saint-joseph, RE<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([-33.6971, -53.4616], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("chui, UY<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([-23.9631, -46.3919], {
+        color: 'blue',
+        radius: 13.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sao vicente, BR<br>Humidity: 26%");
+    
+    var marker = L.circleMarker([6.4965, 2.6036], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("porto novo, BJ<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([-25.3, 152.9], {
+        color: 'blue',
+        radius: 40.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("urangan, AU<br>Humidity: 81%");
+    
+    var marker = L.circleMarker([18.035, -102.3266], {
+        color: 'blue',
+        radius: 28.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la mira, MX<br>Humidity: 56%");
+    
+    var marker = L.circleMarker([-5.1241, 120.253], {
+        color: 'blue',
+        radius: 41.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("sinjai, ID<br>Humidity: 83%");
+    
+    var marker = L.circleMarker([36.6177, -121.9166], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pacific grove, US<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([61.5996, 5.0328], {
+        color: 'blue',
+        radius: 46.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("floro, NO<br>Humidity: 93%");
+    
+    var marker = L.circleMarker([59.6425, -151.5483], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("homer, US<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([32.3187, -102.5457], {
+        color: 'blue',
+        radius: 49.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("andrews, US<br>Humidity: 98%");
+    
+    var marker = L.circleMarker([20.9219, -156.3051], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("haiku-pauwela, US<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([52.7939, 89.8983], {
+        color: 'blue',
+        radius: 44.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("tashtyp, RU<br>Humidity: 89%");
+    
+    var marker = L.circleMarker([36.0307, -75.676], {
+        color: 'blue',
+        radius: 37.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("kill devil hills, US<br>Humidity: 74%");
+    
+    var marker = L.circleMarker([47.4334, -72.7824], {
+        color: 'blue',
+        radius: 16.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la tuque, CA<br>Humidity: 33%");
+    
+    var marker = L.circleMarker([37.9787, -0.6822], {
+        color: 'blue',
+        radius: 41.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("torrevieja, ES<br>Humidity: 82%");
+    
+    var marker = L.circleMarker([25.2088, 64.6357], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("ormara, PK<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([16.65, -98.9833], {
+        color: 'blue',
+        radius: 25.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("copala, MX<br>Humidity: 50%");
+    
+    var marker = L.circleMarker([13.45, 22.45], {
+        color: 'blue',
+        radius: 5.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("geneina, SD<br>Humidity: 11%");
+    
+    var marker = L.circleMarker([-0.8667, 134.0833], {
+        color: 'blue',
+        radius: 37.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("manokwari, ID<br>Humidity: 75%");
+    
+    var marker = L.circleMarker([31.3167, -113.5333], {
+        color: 'blue',
+        radius: 11.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("puerto penasco, MX<br>Humidity: 23%");
+    
+    var marker = L.circleMarker([-9.0763, 143.2092], {
+        color: 'blue',
+        radius: 42.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("daru, PG<br>Humidity: 85%");
+    
+    var marker = L.circleMarker([50.7833, 121.5167], {
+        color: 'blue',
+        radius: 31.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("genhe, CN<br>Humidity: 62%");
+    
+    var marker = L.circleMarker([55.1001, -105.2842], {
+        color: 'blue',
+        radius: 16.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("la ronge, CA<br>Humidity: 33%");
+    
+    var marker = L.circleMarker([12.5847, -81.7006], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("san andres, CO<br>Humidity: 79%");
+    
+    var marker = L.circleMarker([2.7388, 23.7833], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("aketi, CD<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([27.1935, 2.4607], {
+        color: 'blue',
+        radius: 8.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("i-n-salah, DZ<br>Humidity: 16%");
+    
+    var marker = L.circleMarker([-22.9575, 14.5053], {
+        color: 'blue',
+        radius: 36.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("walvis bay, nan<br>Humidity: 73%");
+    
+    var marker = L.circleMarker([14.5748, 33.3373], {
+        color: 'blue',
+        radius: 5.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("al masallamiyya, SD<br>Humidity: 10%");
+    
+    var marker = L.circleMarker([20.8833, 75.1167], {
+        color: 'blue',
+        radius: 21.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("parola, IN<br>Humidity: 43%");
+    
+    var marker = L.circleMarker([51.485, 104.8461], {
+        color: 'blue',
+        radius: 33.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("rechka-vydrino, RU<br>Humidity: 66%");
+    
+    var marker = L.circleMarker([32.266, 111.6348], {
+        color: 'blue',
+        radius: 26.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("gucheng chengguanzhen, CN<br>Humidity: 53%");
+    
+    var marker = L.circleMarker([-37.25, 174.75], {
+        color: 'blue',
+        radius: 31.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("waiuku, NZ<br>Humidity: 63%");
+    
+    var marker = L.circleMarker([-7.7478, -34.8256], {
+        color: 'blue',
+        radius: 38.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("itamaraca, BR<br>Humidity: 77%");
+    
+    var marker = L.circleMarker([40.7266, -115.5859], {
+        color: 'blue',
+        radius: 13.0  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("spring creek, US<br>Humidity: 26%");
+    
+    var marker = L.circleMarker([56.2499, -120.8529], {
+        color: 'blue',
+        radius: 10.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("fort st. john, CA<br>Humidity: 21%");
+    
+    var marker = L.circleMarker([44.3683, -100.351], {
+        color: 'blue',
+        radius: 16.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("pierre, US<br>Humidity: 33%");
+    
+    var marker = L.circleMarker([18.8003, 110.3967], {
+        color: 'blue',
+        radius: 39.5  # Adjust size proportionally if needed
+    });
+    marker.addTo(map);
+    marker.bindPopup("wanning, CN<br>Humidity: 79%");
+    
+    </script>
+</body>
+</html>
